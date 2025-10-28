@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="LayoutPlayground.MainPage">
+
+ <ScrollView>
+ <VerticalStackLayout Padding="20" Spacing="20">
+
+ <Frame Margin="10" Padding="12" CornerRadius="10" HasShadow="True">
+ <VerticalStackLayout Spacing="10">
+ <Label Text="StackLayout - Vertical Buttons" FontAttributes="Bold" />
+
+ <StackLayout Orientation="Vertical" Spacing="10" Padding="6">
+ <Button Text="Button1" />
+ <Button Text="Button2" />
+ <Button Text="Button3" />
+ </StackLayout>
+
+
+ <HorizontalStackLayout Spacing="10" Margin="0,8,0,0">
+ <Button Text="HBtn1" />
+ <Button Text="HBtn2" />
+ </HorizontalStackLayout>
+ </VerticalStackLayout>
+ </Frame>
+
+
+ <Frame Margin="10" Padding="12" CornerRadius="12" HasShadow="True">
+ <VerticalStackLayout Spacing="8">
+ <Label Text="Grid2x2" FontAttributes="Bold" />
+
+ <Grid ColumnSpacing="8" RowSpacing="8" Margin="0,8,0,0">
+ <Grid.RowDefinitions>
+ <RowDefinition Height="Auto" />
+ <RowDefinition Height="Auto" />
+ </Grid.RowDefinitions>
+ <Grid.ColumnDefinitions>
+ <ColumnDefinition Width="*" />
+ <ColumnDefinition Width="*" />
+ </Grid.ColumnDefinitions>
+
+ <Label Text="Red" BackgroundColor="LightCoral" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0" HeightRequest="80" />
+ <Label Text="Green" BackgroundColor="LightGreen" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1" HeightRequest="80" />
+ <Label Text="Blue" BackgroundColor="LightSkyBlue" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0" HeightRequest="80" />
+ <Label Text="Purple" BackgroundColor="Plum" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="1" HeightRequest="80" />
+ </Grid>
+ </VerticalStackLayout>
+ </Frame>
+
+
+ <Frame Margin="10" Padding="12" CornerRadius="12" HasShadow="True">
+ <VerticalStackLayout Spacing="8">
+ <Label Text="FlexLayout - Boxes" FontAttributes="Bold" />
+ <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround" AlignItems="Center" Margin="0,8,0,0">
+ <BoxView Color="Tomato" WidthRequest="80" HeightRequest="80" CornerRadius="8" Margin="6" />
+ <BoxView Color="Gold" WidthRequest="60" HeightRequest="120" CornerRadius="8" Margin="6" />
+ <BoxView Color="MediumSeaGreen" WidthRequest="120" HeightRequest="60" CornerRadius="8" Margin="6" />
+ <BoxView Color="CornflowerBlue" WidthRequest="100" HeightRequest="100" CornerRadius="8" Margin="6" />
+ <BoxView Color="Orchid" WidthRequest="50" HeightRequest="50" CornerRadius="8" Margin="6" />
+ </FlexLayout>
+
+ <Label Text="Dica: redimensione a janela no Windows ou gire o ecrã no Android para ver o comportamento." FontSize="Small" Margin="0,10,0,0" />
+ </VerticalStackLayout>
+ </Frame>
+
+
+ <Frame Margin="10" Padding="12" CornerRadius="8" HasShadow="True">
+ <VerticalStackLayout Spacing="8">
+ <Label Text="Exemplo HorizontalStackLayout e VerticalStackLayout" FontAttributes="Bold" />
+
+ <HorizontalStackLayout Spacing="8" Margin="0,8,0,0">
+ <Button Text="Left" HorizontalOptions="StartAndExpand" />
+ <Button Text="Center" HorizontalOptions="CenterAndExpand" />
+ <Button Text="Right" HorizontalOptions="EndAndExpand" />
+ </HorizontalStackLayout>
+
+ <VerticalStackLayout Spacing="6" Margin="0,10,0,0">
+ <Label Text="Item1" />
+ <Label Text="Item2" />
+ <Label Text="Item3" />
+ </VerticalStackLayout>
+ </VerticalStackLayout>
+ </Frame>
+
+ </VerticalStackLayout>
+ </ScrollView>
+
+</ContentPage>

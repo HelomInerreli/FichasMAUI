@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="ContadorApp/ContadorApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="LayoutPlayground/LayoutPlayground.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="OlaMundoApp/OlaMundoApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>

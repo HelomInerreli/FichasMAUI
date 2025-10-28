@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OlaMundoApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+     Padding="30,0"
+     Spacing="25"
+    BackgroundColor="Beige">
+
+            <Label
+         Text="Bem-Vindo à App Olá Mundo!"
+         Style="{StaticResource Headline}"
+         SemanticProperties.HeadingLevel="Level1" />
+
+            <Entry
+         x:Name="NameEntry"
+         Placeholder="Digite seu nome aqui"
+         SemanticProperties.Hint="Campo para inserir o nome do usuário" />
+
+            <Button
+         x:Name="EventBtn"
+         Text="Saudar" 
+         Clicked="OnClickedBtn"
+         HorizontalOptions="Fill" />
+
+            <Label
+         x:Name="GreetingLabel"
+         Text="Olá!"
+         Style="{StaticResource SubHeadline}"
+         SemanticProperties.HeadingLevel="Level2" />
+
+            <Label
+        x:Name="HoraLabel"
+        Text=""
+        Style="{StaticResource SubHeadline}"
+        SemanticProperties.HeadingLevel="Level9" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContadorApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                x:Name="CounterLabel"
+                Text="Contador:0"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <HorizontalStackLayout
+                Spacing="16"
+                HorizontalOptions="Center"
+                Padding="30,0">
+                <Button
+                    x:Name="PlusBtn"
+                    Text=" + " 
+                    BackgroundColor="Green"
+                    Clicked="PlusClicked"
+                    WidthRequest="140"
+                    HeightRequest="60"
+                    FontSize="18"
+                    CornerRadius="12"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+                <Button
+                    x:Name="MinusBtn"
+                    Text=" - " 
+                    BackgroundColor="Red"
+                    Clicked="MinusClicked"
+                    WidthRequest="140"
+                    HeightRequest="60"
+                    FontSize="18"
+                    CornerRadius="12"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <Button
+                x:Name="ResetBtn"
+                Text=" Reset " 
+                Clicked="ResetClicked"
+                WidthRequest="180"
+                HeightRequest="60"
+                FontSize="18"
+                CornerRadius="12"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
