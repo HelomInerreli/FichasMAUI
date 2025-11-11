@@ -1,4 +1,7 @@
 <Solution>
+  <Project Path="ContactosApp/ContactosApp.csproj" Id="f56ac61a-181f-4f62-901b-df3051b29295">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="ContadorApp/ContadorApp.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
