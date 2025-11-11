@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavegacaoApp.Pagina2"
+             Title="Pagina2">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Label 
+            Text="Welcome to Page 2"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button
+                x:Name="backBtn"
+                BackgroundColor="DarkGray"
+                TextColor="Black"
+                Text="Voltar"
+                WidthRequest="200"
+                HeightRequest="50"
+                SemanticProperties.Hint="Go to back page"
+                Clicked="OnBackClicked"
+                HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

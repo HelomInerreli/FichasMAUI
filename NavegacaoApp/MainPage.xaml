@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavegacaoApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Entry
+                x:Name="nameEntry"
+                WidthRequest="250"
+                HeightRequest="50"
+                Placeholder="Digite seu nome"
+                Keyboard="Text"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Pag1Btn"
+                Text="Ir para Pag 1"
+                WidthRequest="200"
+                HeightRequest="50"
+                SemanticProperties.Hint="Go to page 1"
+                Clicked="OnGoPage1Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="Pag2Btn"
+                BackgroundColor="Yellow"
+                TextColor="Black"
+                Text="Ir para Pag 2"
+                WidthRequest="200"
+                HeightRequest="50"
+                SemanticProperties.Hint="Go to page 2"
+                Clicked="OnGoPage2Clicked"
+                HorizontalOptions="Fill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
