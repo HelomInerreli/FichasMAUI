@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor = "{AppThemeBinding Light=#FFFFFF, Dark=#222222}"
+             x:Class="EstilosApp.MainPage">
+
+    <!-- TitleView places custom content in the top navigation bar for this page -->
+    <Shell.TitleView>
+        <HorizontalStackLayout Spacing="0" VerticalOptions="Center" Padding="0" Margin="0">
+            <Image Source="light_mode.png" WidthRequest="22" HeightRequest="20" VerticalOptions="Center" />
+            <Switch x:Name="ThemeSwitch" Toggled="OnToggled" OnColor="LightBlue" ThumbColor="Blue" />
+            <Image Source="dark_mode.png" WidthRequest="15" HeightRequest="15" VerticalOptions="Center" />
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="App Estilos"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                WidthRequest="150"
+                Text="Teste Botão Stilo"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -5,11 +5,17 @@
   <Project Path="ContadorApp/ContadorApp.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="EstilosApp/EstilosApp.csproj" Id="8ef7eae0-7124-4586-a512-8a25dab3b85d">
+    <Deploy Solution="Debug|*" />
+  </Project>
   <Project Path="LayoutPlayground/LayoutPlayground.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="ListaComprasApp/ListaComprasApp.csproj" Id="9744e894-458c-482d-85d2-44e7851680c1">
     <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="MenuShellApp/MenuShellApp.csproj" Id="cbefeb07-3dae-406c-a88d-000aab097870">
+    <Deploy />
   </Project>
   <Project Path="NavegacaoApp/NavegacaoApp.csproj" Id="4894c410-f7fe-43e4-b9c3-adc9ea252db6">
     <Deploy />
